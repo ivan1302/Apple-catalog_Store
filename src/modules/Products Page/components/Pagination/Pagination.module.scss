@@ -11,6 +11,7 @@
   padding: 24px 0;
   width: 100%;
   background-color: $main-bg-color;
+  will-change: position;
 
   &__button {
     font-family: Mont, sans-serif;

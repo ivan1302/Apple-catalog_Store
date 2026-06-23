@@ -12,5 +12,9 @@ export const ScrollToTop: React.FC<Props> = ({ children }) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [pathname]);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return <>{children}</>;
 };
