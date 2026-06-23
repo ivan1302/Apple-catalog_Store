@@ -39,6 +39,10 @@ export const ProductPage: React.FC<Props> = ({
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [slug]);
+
   if (isLoading) {
     return (
       <div className={Prod.product}>

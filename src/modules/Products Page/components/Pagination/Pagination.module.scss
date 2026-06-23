@@ -1,9 +1,16 @@
 @import '../../../../styles/main';
 
 .pagination {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
+  padding: 24px 0;
+  width: 100%;
+  background-color: $main-bg-color;
 
   &__button {
     font-family: Mont, sans-serif;
